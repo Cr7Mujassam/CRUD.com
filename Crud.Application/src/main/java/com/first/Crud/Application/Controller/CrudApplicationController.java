@@ -28,4 +28,10 @@ public class CrudApplicationController {
 		return crudService.updateDetails(st);
 	}
 	
+	//insert the data
+	@PostMapping(value = "/insert/data")
+	public Student insertDetail(@RequestBody Student st) {
+		return crudService.insertDetails(st);
+	}
+	
 }

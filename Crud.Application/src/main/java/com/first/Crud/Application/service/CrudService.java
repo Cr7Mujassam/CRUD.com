@@ -25,5 +25,13 @@ public class CrudService {
 	public Student updateDetails(Student st) {
 		return createOrWatch.updateDetails(st);
 	}
+	
+	//insert detail
+	public Student insertDetails(Student st) {
+		return createOrWatch.insertDetails(st);
+	}
+	
+	
 	//delete details
+	
 }

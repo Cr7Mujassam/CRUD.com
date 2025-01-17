@@ -34,5 +34,10 @@ public class CreateOrWatchDataDao {
 		Student st1 = sr.save(st);
 		return st1;
 	}
+	
+	//insert detail
+	public Student insertDetails(Student s) {
+		return sr.save(s);
+	}
 
 }
