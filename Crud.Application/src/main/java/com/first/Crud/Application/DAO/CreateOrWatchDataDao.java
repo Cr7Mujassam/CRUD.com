@@ -39,5 +39,13 @@ public class CreateOrWatchDataDao {
 	public Student insertDetails(Student s) {
 		return sr.save(s);
 	}
+	
+	public String deleteDetails(Student s) {
+		//fetch the details
+		st = sr.findById(s.getStudentId()).get();
+		//deleting the value
+		sr.deleteById(st.getStudentId());
+		return "yes its your id with" + st.getStudentName() + " is delete";
+	}
 
 }

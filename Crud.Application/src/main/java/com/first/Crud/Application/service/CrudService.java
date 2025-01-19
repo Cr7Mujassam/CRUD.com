@@ -33,5 +33,7 @@ public class CrudService {
 	
 	
 	//delete details
-	
+	public String deleteDetails(Student st) {
+		return createOrWatch.deleteDetails(st);
+	}
 }
